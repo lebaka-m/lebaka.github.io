@@ -5,50 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lebaka's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Lebaka's Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Lebaka's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="about">
+        <section id="about" class="container">
             <h2>About Me</h2>
-            <!--img src="profile.jpeg" alt="Profile Picture"-->
-            <p>Hi, I'm Lebaka, an IT professional specializing in ...</p>
-        </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of project 1...</p>
-                <a href="https://github.com/username/project1">View on GitHub</a>
+            <div class="profile">
+                <p>Hi, I'm Lebaka, an IT professional specializing in ...</p>
             </div>
-            <!-- Add more projects as needed -->
         </section>
-        <section id="skills">
+        <section id="portfolio" class="container">
+            <h2>Portfolio</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Description of project 1...</p>
+                    <a href="https://github.com/username/project1">View on GitHub</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+        <section id="skills" class="container">
             <h2>Skills</h2>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
+            <ul class="skills-list">
+                <li><i class="fas fa-code"></i> Skill 1</li>
+                <li><i class="fas fa-database"></i> Skill 2</li>
                 <!-- Add more skills as needed -->
             </ul>
         </section>
-        <section id="experience">
+        <section id="experience" class="container">
             <h2>Experience</h2>
-            <h3>Job Title - Company</h3>
-            <p>Description of role and responsibilities...</p>
-            <!-- Add more experiences as needed -->
+            <div class="experience">
+                <h3>ICT Security Specialist - Ndou Attorneys Inc</h3>
+                <h3>JUN '21 - Present</h3>
+                <p>Description of role and responsibilities...</p>
+                <!-- Add more experiences as needed -->
+            </div>
         </section>
-        <section id="contact">
+        <section id="contact" class="container">
             <h2>Contact</h2>
             <form>
                 <label for="name">Name</label>
