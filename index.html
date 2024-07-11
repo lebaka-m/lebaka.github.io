@@ -3,12 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Lebaka's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a basic website created with Visual Studio Code.</p>
+    <header>
+        <h1>Lebaka's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="profile.jpeg" alt="Profile Picture">
+            <p>Hi, I'm Lebaka, an IT professional specializing in ...</p>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project 1...</p>
+                <a href="https://github.com/username/project1">View on GitHub</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <h3>Job Title - Company</h3>
+            <p>Description of role and responsibilities...</p>
+            <!-- Add more experiences as needed -->
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lebaka. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
